@@ -107,7 +107,8 @@ def timeoutFiles(): # times out after the 3rd day
     files = os.listdir(r'C:\Enter\Path\Here\')
     for file in files:
         if 'Startup_Config.txt' in file:
-            file_stats = os.stat(fr'C:\Enter\Path\Here\{file}')
+            file = fr'C:\Enter\Path\Here\{file}'
+            file_stats = os.stat(file)
             file_timestamp = file_stats[stat.ST_MTIME]
             file_datetime = str(datetime.fromtimestamp(file_timestamp))
             current_date = now_timestamp.split(' ')[0]
