@@ -8,3 +8,4 @@ IMPORTANT NOTE !!! switches will need "ip ssh password-auth" to work
 
 Files are set to timeout after 3 days. This prevents buildup of files in case a hostname is changed, causing a new file to be created instead of overwriting previous file.
 I did not test the timeout part, I am just assuming it works. Perhaps I shall update in 3 days. 
+Update: works. I just made one mistake not putting in the full file path. 
